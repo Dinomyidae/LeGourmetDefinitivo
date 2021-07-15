@@ -7,39 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".AdvancedRecipe">
 
-    <SearchView
-        android:id="@+id/pesquisaView3"
-        android:layout_width="245dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/searchiew_background"
-        android:iconifiedByDefault="false"
-        android:queryBackground="@android:color/transparent"
-        android:queryHint="Digite uma receita!"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ListView
-            android:id="@+id/receitaList"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp" />
-    </SearchView>
-
     <TextView
         android:id="@+id/string_pesquisaAvancada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
-        android:fontFamily="@font/advent_pro_semibold"
+        android:fontFamily="@font/advent_pro_thin"
         android:text="@string/pesquisa_avan_ada"
-        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="52sp"
         app:layout_constraintBottom_toTopOf="@+id/espaco_AddInredietes1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/espaco_AddInredietes1"
@@ -49,7 +29,7 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/digite_o_ingrediente1"
+        android:text="@string/digite_o_ingrediente_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -63,7 +43,7 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/digite_o_ingrediente2"
+        android:text="@string/digite_o_ingrediente_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -79,7 +59,7 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/digite_o_ingrediente3"
+        android:text="@string/digite_o_ingrediente_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -107,7 +87,11 @@
         android:id="@+id/string_adicionaIngredientes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="casual"
         android:text="@string/adicione_mais_ingredientes"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
