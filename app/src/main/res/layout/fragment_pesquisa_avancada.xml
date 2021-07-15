@@ -46,10 +46,10 @@
         android:text="@string/digite_o_ingrediente_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/espaco_AddInredietes1"
-        app:layout_constraintVertical_bias="0.51" />
+        app:layout_constraintVertical_bias="0.723" />
 
     <EditText
         android:id="@+id/espaco_AddInredietes3"
@@ -62,10 +62,10 @@
         android:text="@string/digite_o_ingrediente_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/espaco_AddInredietes2"
-        app:layout_constraintVertical_bias="0.54" />
+        app:layout_constraintVertical_bias="0.396" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/bt_AddIngrediente"

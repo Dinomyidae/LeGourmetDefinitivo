@@ -2,4 +2,79 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph" />
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment3">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.legourmet.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment3"
+            app:destination="@id/mainFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/compatilharReceitaFragment"
+        android:name="com.example.legourmet.CompatilharReceitaFragment"
+        android:label="fragment_compatilhar_receita"
+        tools:layout="@layout/fragment_compatilhar_receita" >
+        <action
+            android:id="@+id/action_compatilharReceitaFragment_to_resultadoFragment"
+            app:destination="@id/resultadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recomendacaoFragment"
+        android:name="com.example.legourmet.RecomendacaoFragment"
+        android:label="fragment_recomendacao"
+        tools:layout="@layout/fragment_recomendacao" >
+        <action
+            android:id="@+id/action_recomendacaoFragment_to_receitaFragment"
+            app:destination="@id/receitaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pesquisaAvancadaFragment"
+        android:name="com.example.legourmet.PesquisaAvancadaFragment"
+        android:label="PesquisaAvancadaFragment" >
+        <action
+            android:id="@+id/action_pesquisaAvancadaFragment_to_resultadoFragment"
+            app:destination="@id/resultadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/receitaFragment"
+        android:name="com.example.legourmet.ReceitaFragment"
+        android:label="ReceitaFragment" />
+    <fragment
+        android:id="@+id/resultadoFragment"
+        android:name="com.example.legourmet.ResultadoFragment"
+        android:label="fragment_resultado"
+        tools:layout="@layout/fragment_resultado" >
+        <action
+            android:id="@+id/action_resultadoFragment_to_receitaFragment"
+            app:destination="@id/receitaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usuarioMenuFragment"
+        android:name="com.example.legourmet.UsuarioMenuFragment"
+        android:label="fragment_usuario_menu"
+        tools:layout="@layout/fragment_usuario_menu" />
+    <fragment
+        android:id="@+id/mainFragment3"
+        android:name="com.example.legourmet.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment3_to_compatilharReceitaFragment"
+            app:destination="@id/compatilharReceitaFragment" />
+        <action
+            android:id="@+id/action_mainFragment3_to_recomendacaoFragment"
+            app:destination="@id/recomendacaoFragment" />
+        <action
+            android:id="@+id/action_mainFragment3_to_pesquisaAvancadaFragment"
+            app:destination="@id/pesquisaAvancadaFragment" />
+        <action
+            android:id="@+id/action_mainFragment3_to_usuarioMenuFragment"
+            app:destination="@id/usuarioMenuFragment" />
+        <action
+            android:id="@+id/action_mainFragment3_to_resultadoFragment"
+            app:destination="@id/resultadoFragment" />
+    </fragment>
+</navigation>
