@@ -5,15 +5,6 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/mainFragment3">
     <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.legourmet.ui.login.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
-        <action
-            android:id="@+id/action_loginFragment_to_mainFragment3"
-            app:destination="@id/mainFragment3" />
-    </fragment>
-    <fragment
         android:id="@+id/compatilharReceitaFragment"
         android:name="com.example.legourmet.CompatilharReceitaFragment"
         android:label="fragment_compatilhar_receita"
